@@ -1,0 +1,221 @@
+@font-face {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("fonts/opensans.woff2") format("woff2"), url("fonts/opensans.woff") format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src: url("fonts/opensansbold.woff2") format("woff2"), url("fonts/opensansbold.woff") format("woff");
+}
+.page img {
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.page {
+  height: 100%;
+  font-size: 14px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  line-height: 24px;
+}
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  background-color: #FFFFFF;
+  color: #283645;
+}
+.page a {
+  text-decoration: none;
+}
+.page-header {
+  background-color: #283645;
+  color: #FFFFFF;
+}
+.page-header a {
+  color: #FFFFFF;
+}
+.page-header__heading {
+  font-size: 24px;
+  line-height: 32.68px;
+  font-weight: 300;
+}
+.advantages {
+  background-color: #F2F2F2;
+}
+.advantages__slogan {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
+  background-color: #FFFFFF;
+}
+.advantages__title {
+  color: #000000;
+  font-size: 18px;
+  line-height: 24px;
+}
+.contacts {
+  font-weight: 300;
+}
+.contacts__slogan {
+  font-size: 24px;
+  line-height: 28.8px;
+}
+.contacts__item .contacts__connect {
+  font-size: 18px;
+  line-height: 24.51px;
+  font-weight: bold;
+}
+.contacts__item .contacts__linc {
+  line-height: 32.68px;
+  font-size: 24px;
+  font-weight: normal;
+  color: #D22856;
+}
+.copyright__text {
+  line-height: 18px;
+}
+.download {
+  background: url("../img/back-mobile.jpg") no-repeat;
+  color: #FFFFFF;
+}
+.download a {
+  color: #FFFFFF;
+}
+.download__button {
+  font-size: 18px;
+  line-height: 18px;
+  border: 3px solid #FFFFFF;
+  border-radius: 50px;
+}
+.download__slogan {
+  font-size: 24px;
+  line-height: 28.8px;
+  font-weight: 300;
+}
+.price {
+  line-height: 30px;
+  background-color: #F2F2F2;
+}
+.reviews__list {
+  line-height: 30px;
+}
+.reviews__author-name {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+}
+.table-price__header {
+  background-color: #283645;
+  color: #FFFFFF;
+}
+.table-price__license-type {
+  font-size: 16px;
+  font-weight: bold;
+}
+.table-price__license-price {
+  font-size: 18px;
+  font-weight: 300;
+}
+.form__legend-text {
+  line-height: 18px;
+  color: #D22856;
+  text-transform: uppercase;
+}
+.form__pink-label {
+  line-height: 30px;
+  color: #D22856;
+  text-transform: uppercase;
+}
+.form__black-label {
+  font-size: 18px;
+  line-height: 30px;
+}
+.form__link-input::-moz-placeholder {
+  color: #283645;
+  opacity: 1;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+.form__link-input::placeholder {
+  color: #283645;
+  opacity: 1;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+.form__link-input::-moz-placeholder {
+  color: #283645;
+  opacity: 1;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+.form__input::-moz-placeholder {
+  color: #283645;
+  opacity: 1;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+.form__input::placeholder {
+  color: #283645;
+  opacity: 1;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+.form__input::-moz-placeholder {
+  color: #283645;
+  opacity: 1;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+.form__input:-moz-placeholder {
+  color: #283645;
+  opacity: 1;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+.form__notification {
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.form__notification-star {
+  color: #D22856;
+}
+.form__checkbox {
+  background-color: #F2F2F2;
+}
+.form__radio {
+  background-color: #F2F2F2;
+}
+.page-form__text {
+  line-height: 30px;
+}
+.green-button {
+  background-color: #2AAB6D;
+  border: none;
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=style.css.map */
