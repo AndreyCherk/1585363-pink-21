@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo-image">
-        <img style="background-color: #283645" src="img/logo/pink-logo-mobile.svg" width="74" height="23" alt="«Пинк»">
+      <a class="page-header__logo-image logo-pink">
+        <img src="img/logo/pink-logo-mobile.svg" width="74" height="23" alt="«Пинк»">
       </a>
       <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть навигацию</span></button>
       <nav class="main-nav">
@@ -61,7 +63,9 @@
       <section class="advantages">
         <div class="advantages__wrapper">
           <h2 class="visually-hidden">Преимущества приложения «Пинк»</h2>
-          <p class="advantages__slogan">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+          <div class="advantages__top">
+            <p class="advantages__slogan">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+          </div>
           <ul class="advantages__list">
             <ul class="advantages__item">
               <h3 class="advantages__title">Поднимает настроение</h3>
@@ -97,19 +101,46 @@
       <section class="price">
         <div class="price__wrapper slider">
           <h2 class="visually-hidden">Цены на приложение</h2>
-            <table class="price__table">   <!-- думаю лучше эту таблицу сделать гридом, но пока не понял как... -->
-              <tr>
-                <th><span class="price__table-header-text">Стандарт</span><span class="price__table-header-price">3,99 USD</span></th>
-              </tr>
-              <tr>
-                <td>Розовый фильтр</td>
-              </tr>
-              <tr>
-                <td>Смайлики</td>
-              </tr>
-              <tr>
-                <td>Комментарии</td>
-              </tr>
+          <div class="price__slider">
+            <table class="price__table table-price">
+              <thead>
+                <tr>
+                  <th>
+                  </th>
+                  <th class="table-price__header">
+                    <span class="table-price__license-type">База</span>
+                    <span class="table-price__license-price">1,99 USD</span>
+                  </th>
+                  <th class="table-price__header">
+                    <span class="table-price__license-type">Стандарт</span>
+                    <span class="table-price__license-price">3,99 USD</span>
+                  </th>
+                  <th class="table-price__header">
+                    <span class="table-price__license-type">Анлим</span>
+                    <span class="table-price__license-price">9,99 USD</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table-price__cell">Розовый фильтр</td>
+                  <td class="table-price__cell"></td>
+                  <td class="table-price__cell"></td>
+                  <td class="table-price__cell"></td>
+                </tr>
+                <tr>
+                  <td class="table-price__cell">Смайлики</td>
+                  <td class="table-price__cell"></td>
+                  <td class="table-price__cell"></td>
+                  <td class="table-price__cell"></td>
+                </tr>
+                <tr>
+                  <td class="table-price__cell">Комментарии</td>
+                  <td class="table-price__cell"></td>
+                  <td class="table-price__cell"></td>
+                  <td class="table-price__cell"></td>
+                </tr>
+              </tbody>
             </table>
             <p class="price__toggles slider__toggles">
               <button class="slider__toggle" type="button">1</button>
@@ -121,7 +152,8 @@
       </section>
       <section class="contacts">
         <div class="contacts__wrapper contacts__list">
-          <h2 class="contacts__header">Остались вопросы? Свяжитесь с нами!</h2>
+          <h2 class="visually-hidden">Цены на приложение</h2>
+          <p class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</p>
           <div class="contacts__item">
             <p class="contacts__connect">Звоните:<a class="contacts__linc" href="tel:+78125556666">+7 (812) 555-66-66</a></p>
           </div>
@@ -159,9 +191,5 @@
         </div>
       </div>
     </footer>
-
-
-
   </body>
-
 </html>
