@@ -12,8 +12,8 @@
         <img src="img/logo/pink-logo-mobile.svg" width="74" height="23" alt="«Пинк»">
       </a>
       <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть навигацию</span></button>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
+      <div class="main-nav__wrapper">
+        <nav class="main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a>
@@ -36,12 +36,10 @@
               </a>
             </li>
           </ul>
-        </div>
-      </nav>
-    </header>
-    <main class="page-main">
+        </nav>
+      </div>
       <h1 class="visually-hidden">Приложение «Пинк» — изменит ваш взгляд на жизнь</h1>
-      <section class="download">
+      <div class="page-header__download download">
         <div class="download__wrapper">
           <h2 class="visually-hidden">Скачай приложение «Пинк» на свое устройство</h2>
           <p class="download__slogan">Взгляни на жизнь иначе!</p>
@@ -59,7 +57,9 @@
           </ul>
           <p class="download__operating-system">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
-      </section>
+      </div>
+    </header>
+    <main class="page-main">
       <section class="advantages">
         <div class="advantages__wrapper">
           <h2 class="visually-hidden">Преимущества приложения «Пинк»</h2>
@@ -164,6 +164,7 @@
             <p class="contacts__connect">Приезжайте в гости:<a class="contacts__linc" href="">ул. Большая Конюшенная, 19/8</a></p>
           </div>
         </div>
+        <div class="contacts__map map"></div>
       </section>
     </main>
     <footer class="page-footer">
