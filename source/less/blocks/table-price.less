@@ -1,14 +1,74 @@
+.table-price {
+  border-spacing: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
 .table-price__header {
   background-color: @darkblue;
   color: @white;
+  position: relative;
+  padding-top: 17px;
+  padding-bottom: 21px;
+  border-right: 2px solid @grey;
+  font-size: 18px;
+  min-width: 276px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 10px;
+    padding-bottom: 25px;
+    min-width: 152px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 23px;
+    padding-bottom: 22px;
+    min-width: 233px;
+  }
 }
 
 .table-price__license-type {
   font-size: 16px;
   font-weight: bold;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .table-price__license-price {
+  display: block;
   font-size: 18px;
   font-weight: 300;
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+  }
+}
+
+.table-price__cell {
+  padding: 15px 18px 14px 22px;
+  border-right: 2px solid @black-grey;
+  border-bottom: 2px solid @black-grey;
+  background-color: @white;
+
+  @media (min-width: @desktop-width) {
+    padding: 7px 20px 8px;
+    min-width: 152px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 14px 20px 15px;
+    min-width: 233px;
+  }
+
+  &:first-child {
+    border-left: 2px solid @black-grey;
+  }
+}
+
+.table-price__cell-first {
+  border-top: 2px solid @black-grey;
 }

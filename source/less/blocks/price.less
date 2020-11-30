@@ -1,4 +1,39 @@
 .price {
   line-height: 30px;
+  padding-top: 129px;
+  padding-bottom: 49px;
   background-color: @grey;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 114px;
+    padding-bottom: 70px;
+    background-size: 100% 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 159px;
+    padding-bottom: 98px;
+    background-size: 100% 80px;
+  }
+}
+
+.price__wrapper {
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 740px;
+  }
+}
+
+.price__toggles {
+  margin-top: 40px;
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
