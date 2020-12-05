@@ -10,28 +10,30 @@
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__nav-wrapper">
-        <nav class="page-header__main-nav main-nav">
-          <div class="main-nav__logo-wrapper">
-            <a class="main-nav__logo-image logo-pink">
-              <img src="img/logo/pink-logo-mobile.svg" width="74" height="23" alt="«Пинк»">
-            </a>
-            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть навигацию</span></button>
-          </div>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a class="main-nav__limk">Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__limk" href="catalog.html">Фотографии</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__limk" href="form.html">Конкурс</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__limk" href="">Html Academy</a>
-              </li>
-            </ul>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <div class="main-nav__nav-wrapper">
+            <div class="main-nav__logo-wrapper">
+              <a class="main-nav__logo-image logo-pink">
+                <img src="img/logo/pink-logo-mobile.svg" width="74" height="23" alt="«Пинк»">
+              </a>
+              <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть навигацию</span></button>
+            </div>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item main-nav__item--active">
+                  <a class="main-nav__limk">Главная</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__limk" href="catalog.html">Фотографии</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__limk" href="form.html">Конкурс</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__limk" href="">Html Academy</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </div>
@@ -39,20 +41,22 @@
       <div class="page-header__download download">
         <div class="download__wrapper">
           <h2 class="visually-hidden">Скачай приложение «Пинк» на свое устройство</h2>
-          <p class="download__slogan">Взгляни на жизнь иначе!</p>
-          <a class="download__button" href="">Скачать приложение</a>
-          <ul class="download__list">
-            <li class="download__item">
-              <a class="download__link" href=""><img style="background-color: #283645" src="img/logo/apple-logo.png" width="47" height="56" alt="Apple"></a>
-            </li>
-            <li class="download__item">
-              <a class="download__link" href=""><img src="img/logo/android-logo.png" width="43" height="47" alt="Android"></a>
-            </li>
-            <li class="download__item">
-              <a class="download__link" href=""><img src="img/logo/microsoft-logo.png" width="44" height="41" alt="Microsoft"></a>
-            </li>
-          </ul>
-          <p class="download__operating-system">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <p class="download__slogan">Взгляни на жизнь<br> иначе!</p>
+          <div class="download__bottom">
+            <a class="download__button" href="">Скачать приложение</a>
+            <ul class="download__list">
+              <li class="download__item">
+                <a class="download__link" href=""><img style="background-color: #283645" src="img/logo/apple-logo.png" width="47" height="56" alt="Apple"></a>
+              </li>
+              <li class="download__item">
+                <a class="download__link" href=""><img src="img/logo/android-logo.png" width="43" height="47" alt="Android"></a>
+              </li>
+              <li class="download__item">
+                <a class="download__link" href=""><img src="img/logo/microsoft-logo.png" width="44" height="41" alt="Microsoft"></a>
+              </li>
+            </ul>
+            <p class="download__operating-system">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+          </div>
         </div>
       </div>
     </header>
@@ -117,9 +121,9 @@
             </blockquote>
           </div>
           <div class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+            <button class="slider__toggle slider__toggle--current" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
           </div>
           <div class="slider__nav slider-nav-button">
             <button class="slider__button slider__button--prev" type="button"></button>
@@ -134,9 +138,9 @@
             <table class="price__table table-price">
               <thead>
                 <tr>
-                  <th>
+                  <th class="table-price__header-first">
                   </th>
-                  <th class="table-price__header">
+                  <th class="table-price__header table-price__header-one">
                     <span class="table-price__license-type">База</span>
                     <span class="table-price__license-price">1,99 USD</span>
                   </th>
@@ -144,7 +148,7 @@
                     <span class="table-price__license-type">Стандарт</span>
                     <span class="table-price__license-price">3,99 USD</span>
                   </th>
-                  <th class="table-price__header">
+                  <th class="table-price__header table-price__header-three">
                     <span class="table-price__license-type">Анлим</span>
                     <span class="table-price__license-price">9,99 USD</span>
                   </th>
@@ -152,29 +156,95 @@
               </thead>
               <tbody>
                 <tr>
-                  <td class="table-price__cell table-price__cell-first">Розовый фильтр</td>
-                  <td class="table-price__cell"></td>
-                  <td class="table-price__cell"></td>
-                  <td class="table-price__cell"></td>
+                  <td class="table-price__cell table-price__cell-first table-price__cell-one">
+                    <span>
+                      Розовый фильтр
+                    </span>
+                  </td>
+                  <td class="table-price__cell">
+                    <div>
+                      <span class="table-price__text">
+                        Розовый фильтр
+                      </span>
+                    </div>
+                  </td>
+                  <td class="table-price__cell">
+                    <div>
+                      <span class="table-price__text">
+                        Розовый фильтр
+                      </span>
+                    </div>
+                  </td>
+                  <td class="table-price__cell">
+                    <div>
+                      <span class="table-price__text">
+                        Розовый фильтр
+                      </span>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
-                  <td class="table-price__cell">Смайлики</td>
-                  <td class="table-price__cell"></td>
-                  <td class="table-price__cell"></td>
-                  <td class="table-price__cell"></td>
+                  <td class="table-price__cell table-price__cell-first">
+                    <span>
+                      Смайлики
+                    </span>
+                  </td>
+                  <td class="table-price__cell">
+                    <div>
+                      <span class="table-price__text">
+                        Смайлики
+                      </span>
+                    </div>
+                  </td>
+                  <td class="table-price__cell">
+                    <div>
+                      <span class="table-price__text">
+                        Смайлики
+                      </span>
+                    </div>
+                  </td>
+                  <td class="table-price__cell">
+                    <div>
+                      <span class="table-price__text">
+                        Смайлики
+                      </span>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
-                  <td class="table-price__cell">Комментарии</td>
-                  <td class="table-price__cell"></td>
-                  <td class="table-price__cell"></td>
-                  <td class="table-price__cell"></td>
+                  <td class="table-price__cell table-price__cell-first">
+                    <span>
+                      Комментарии
+                    </span>
+                  </td>
+                  <td class="table-price__cell">
+                    <div>
+                      <span class="table-price__text">
+                        Комментарии
+                      </span>
+                    </div>
+                  </td>
+                  <td class="table-price__cell">
+                    <div>
+                      <span class="table-price__text">
+                        Комментарии
+                      </span>
+                    </div>
+                  </td>
+                  <td class="table-price__cell">
+                    <div>
+                      <span class="table-price__text">
+                        Комментарии
+                      </span>
+                    </div>
+                  </td>
                 </tr>
               </tbody>
             </table>
             <div class="price__toggles slider__toggles">
-              <button class="slider__toggle" type="button">1</button>
-              <button class="slider__toggle slider__toggle--current" type="button">2</button>
-              <button class="slider__toggle" type="button">3</button>
+              <button class="slider__toggle" type="button"></button>
+              <button class="slider__toggle slider__toggle--current" type="button"></button>
+              <button class="slider__toggle" type="button"></button>
             </div>
           </div>
         </div>
@@ -224,4 +294,22 @@
       </div>
     </footer>
   </body>
+
+  <script>
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
+
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+</script>
+
 </html>
