@@ -2,6 +2,17 @@
   color: @white;
   display: flex;
   flex-direction: column;
+
+
+  background-color: @darkblue;
+  background-image: url("../../img/back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% -70px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
+    background-size: 1338px auto;
+    }
 }
 
 .download__wrapper {
