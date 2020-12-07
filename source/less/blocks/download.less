@@ -1,26 +1,48 @@
 .download {
   color: @white;
-  padding: 29px 20px 38px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+
+
+  background-color: @darkblue;
+  background-image: url("../../img/back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% -70px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
+    background-size: 1338px auto;
+    }
 }
 
 .download__wrapper {
-  width: 320px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
   @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    width: 660px;
-    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    width: 960px;
     margin: 0 auto;
+    width: 920px;
+  }
+}
+
+.download__bottom {
+  padding: 28px 20px 38px;
+  background-color: @darkblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+    padding: 29px 20px 119px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 31px 20px 130px;
   }
 }
 
@@ -39,41 +61,67 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 32px;
+
+  &:hover {
+    color: @pink;
+    background-color: @white;
+  }
+
+  &:active {
+    color: fade(@pink, 30%);
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 67px;
+  }
 }
 
 .download__slogan {
+  text-align: center;
   font-size: 24px;
   line-height: 28.8px;
   font-weight: 300;
   margin: 0;
-  padding-bottom: 320px;
+  padding: 29px 20px 320px;
 
   @media (min-width: @tablet-width) {
-    display: block;
-    width: 300px;
-    margin-top: 0;
-    margin-bottom: 31px;
     font-size: 40px;
+    line-height: 48px;
+    width: 300px;
+    padding: 102px 20px 10px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 52px;
     font-size: 50px;
+    line-height: 69px;
+    padding: 114px 20px 20px;
   }
 }
 
 .download__list {
   margin: 0;
+  width: 204px;
   padding: 0;
   list-style: none;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 58px;
+  }
 }
 
 .download__operating-system {
-  display: block;
-  max-width: 280px;
   margin: 0;
   text-align: center;
 }
