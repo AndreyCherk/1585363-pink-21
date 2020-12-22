@@ -1,31 +1,95 @@
 .download {
   color: @white;
-  padding: 29px 20px 38px;
-  display: flex;
-  align-items: center;
-}
-
-.download__wrapper {
-  width: 320px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-top: -68px;
+  background-color: @darkblue;
+  background-image: url("../../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/back-mobile@2x.jpg");
+    }
 
   @media (min-width: @tablet-width) {
-    align-items: flex-start;
-    width: 660px;
-    margin: 0 auto;
+    margin-top: -110px;
+    background-image: url("../../img/back-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
-    width: 960px;
+    background-image: url("../../img/back-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+
+      @media (min-resolution: 2dppx) {
+      background-image: url("../../img/back-desktop@2x.jpg");
+    }
+  }
+}
+
+.download__wrapper {
+  background-image: url("../../img/phone-hand-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 50% 176px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/phone-hand-mobile@2x.png");
+    }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-image: url("../../img/phone-hand-tablet.png");
+    background-repeat: no-repeat;
+    background-position: 50% 185px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/phone-hand-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
     margin: 0 auto;
+    width: 960px;
+    background-image: url("../../img/phone-hand-desktop.png");
+    background-repeat: no-repeat;
+    background-position: -30% 207px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/phone-hand-desktop@2x.png");
+    }
+  }
+}
+
+.download__bottom {
+  padding: 28px 20px 38px;
+  background-color: @darkblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+    padding: 17px 20px 117px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 18px 20px 123px;
   }
 }
 
 .download a {
   color: @white;
+  text-decoration: none;
 }
 
 .download__button {
@@ -34,46 +98,88 @@
   border: 3px solid @white;
   border-radius: 50px;
   width: 280px;
-  height: 55px;
+  height: 49px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 32px;
+
+  &:hover {
+    color: @pink;
+    background-color: @white;
+    width: 280px;
+  }
+
+  &:active {
+    color: fade(@pink, 30%);
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 46px;
+    width: 300px;
+
+    &:hover {
+      color: @pink;
+      background-color: @white;
+      width: 300px;
+    }
+
+    &:active {
+      color: fade(@pink, 30%);
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 67px;
+  }
 }
 
 .download__slogan {
+  text-align: center;
   font-size: 24px;
   line-height: 28.8px;
   font-weight: 300;
   margin: 0;
-  padding-bottom: 320px;
+  padding: 95px 20px 309.4px;
 
   @media (min-width: @tablet-width) {
-    display: block;
-    width: 300px;
-    margin-top: 0;
-    margin-bottom: 31px;
     font-size: 40px;
+    line-height: 48px;
+    width: 300px;
+    padding: 207px 20px 10px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 52px;
     font-size: 50px;
+    line-height: 68px;
+    padding: 210px 20px 20px;
   }
 }
 
 .download__list {
   margin: 0;
+  width: 204px;
   padding: 0;
   list-style: none;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 45px;
+  }
 }
 
 .download__operating-system {
-  display: block;
-  max-width: 280px;
   margin: 0;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 }

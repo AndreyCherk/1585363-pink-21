@@ -1,0 +1,58 @@
+.header-logo {
+  display: block;
+  width: 74px;
+  height: 23px;
+
+  @media (min-width: @tablet-width) {
+    width: 146px;
+    height: 40px;
+  }
+}
+
+.header-logo__image {
+  display: block;
+  width: 74px;
+  height: 23px;
+  fill: currentColor;
+  pointer-events: none;
+  fill: @white;
+
+  .main-nav__logo-wrapper a[href]:hover & {
+    fill: @pink;
+  }
+
+  .main-nav__logo-wrapper a[href]:active & {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 146px;
+    height: 40px;
+  }
+
+  &--mobile {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
+  }
+}
