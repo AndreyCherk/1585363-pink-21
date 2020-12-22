@@ -15,3 +15,49 @@
     max-width: 600px;
   }
 }
+
+.social__icon {
+  fill: @pink;
+}
+
+.social__item {
+  margin: 0 6px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 3px 0 9px;
+  }
+
+  @media (min-width: @desktop-width){
+    margin: 0 2px 0 10px;
+  }
+}
+
+.social__link {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: fade(@darkblue, 10%);
+  border-radius: 50%;
+  color: @pink;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover {
+    border-color: @darkblue;
+  }
+
+  &:active {
+    border-color: fade(@darkblue, 40%);
+    opacity: 0.3;
+  }
+}
+
+.social__icon {
+  display: block;
+  margin: auto;
+  fill: currentColor;
+  pointer-events: none;
+}

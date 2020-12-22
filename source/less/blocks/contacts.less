@@ -31,6 +31,16 @@
 .contacts a {
   text-decoration: none;
   color: @pink;
+
+  &:hover {
+    color: @darkblue;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: fade(@darkblue, 30%);
+    text-decoration: none;
+  }
 }
 
 .contacts__slogan {
