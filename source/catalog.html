@@ -9,71 +9,77 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo-image">
-        <img style="background-color: #283645" src="img/logo/pink-logo-mobile.svg" width="74" height="23" alt="«Пинк»">
-      </a>
-      <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть навигацию</span></button>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">
-                Главная
+      <div class="page-header__nav-wrapper">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <div class="main-nav__nav-wrapper">
+            <div class="main-nav__logo-wrapper">
+              <a href="" class="main-nav__logo-image header-logo" aria-label="Логотип сайта Pink">
+                <svg class="header-logo__image header-logo__image--mobile" width="74" height="23">
+                  <use xlink:href="img/symbols.svg#logo-pink-white-mobile"></use>
+                </svg>
+                <svg class="header-logo__image header-logo__image--tablet" width="145" height="40">
+                  <use xlink:href="img/symbols.svg#logo-pink-white-tablet"></use>
+                </svg>
+                <svg class="header-logo__image header-logo__image--desktop" width="147" height="40">
+                  <use xlink:href="img/symbols.svg#logo-pink-white-desktop"></use>
+                </svg>
               </a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a>
-                Фотографии
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">
-                Конкурс
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="">
-                Html Academy
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <div class="page-header__heading-wrapper">
-        <h1 class="page-header__heading">Фотографии пользователей</h1>
+              <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть навигацию</span></button>
+            </div>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a class="main-nav__limk">Главная</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__limk main-nav__item--active" href="catalog.html">Фотографии</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__limk" href="form.html">Конкурс</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__limk" href="">Html Academy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
     </header>
     <main class="page-inner">
       <div class="page-inner__wrapper">
+        <div class="page-inner__heading-wrapper">
+          <h1 class="page-inner__heading">Фотографии<br>пользователей</h1>
+        </div>
         <section class="catalog">
+          <h2 class="visually-hidden">Каталог фотографий пользователей с комментариями</h2>
+          <div class="catalog__text-start">
+            <p class="catalog__text">Взгляните на фотографии, которые выкладывают пользователи!<br class="catalog__hidden">Видите, как не хватает ваших?</p>
+          </div>
+          <figure class="catalog__list catalog__list--panorama">
+            <a class="catalog__link catalog__link--panorama" href="">
+              <picture class="catalog__picture catalog__picture--panorama">
+                <source>
+                <source>
+                <img class="catalog__image" src="https://via.placeholder.com/150x150">
+              </picture>
+            </a>
+            <figcaption class="catalog__content catalog__content--panorama">
+              <div class="catalog__comment-info">
+                <b class="catalog__author-name">Анна</b>
+                <time class="catalog__comment-time" datetime="">(5 минут назад)</time>
+              </div>
+              <p class="catalog__comment-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите&nbsp;прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <div class="catalog__like">
+                <button class="catalog__like-button" type="button" aria-label=""></button>
+                <span class="catalog__like-quantity">Нравится: 215</span>
+              </div>
+              <div class="catalog__panorama-day">
+                <span class="catalog__panorama-day-text">Панорама дня</span>
+              </div>
+            </figcaption>
+          </figure>
           <div class="catalog__wrapper">
-            <h2 class="visually-hidden">Каталог фотографий пользователей с комментариями</h2>
-            <div class="catalog__text-start">
-              <p class="catalog__text">Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?</p>
-            </div>
-            <figure class="catalog__panorama">
-              <a class="catalog__link" href="">
-                <picture class="catalog__panorama-picture">
-                  <source>
-                  <source>
-                  <img class="catalog__image" src="https://via.placeholder.com/150x150">
-                </picture>
-              </a>
-              <figcaption class="catalog__content">
-                <div class="catalog__comment-info">
-                  <b class="catalog__author-name">Анна</b>
-                  <time class="catalog__comment-time" datetime="">(5 минут назад)</time>
-                </div>
-                <p class="catalog__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-                <div class="catalog__like">
-                  <button class="catalog__like-button" type="button" aria-label=""></button>
-                  <span class="catalog__like-quantity">Нравится: 215</span>
-                </div>
-                <div class="catalog__panorama-day">
-                  <span class="catalog__panorama-day-text">Панорама дня</span>
-                </div>
-              </figcaption>
-            </figure>
             <figure class="catalog__list">
               <a class="catalog__link" href="">
                 <picture class="catalog__picture">
@@ -87,7 +93,7 @@
                   <b class="catalog__author-name">Левон</b>
                   <time class="catalog__comment-time" datetime="">(5 часов назад)</time>
                 </div>
-                <p class="catalog__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <p class="catalog__comment-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
                 <div class="catalog__like">
                   <button class="catalog__like-button" type="button" aria-label=""></button>
                   <span class="catalog__like-quantity">Нравится: 356</span>
@@ -107,7 +113,7 @@
                   <b class="catalog__author-name">Антон</b>
                   <time class="catalog__comment-time" datetime="">(12 часов назад)</time>
                 </div>
-                <p class="catalog__text">Соседи будут рады!</p>
+                <p class="catalog__comment-text">Соседи будут рады!</p>
                 <div class="catalog__like">
                   <button class="catalog__like-button" type="button" aria-label=""></button>
                   <span class="catalog__like-quantity">Нравится: 666</span>
@@ -127,7 +133,7 @@
                   <b class="catalog__author-name">Борис</b>
                   <time class="catalog__comment-time" datetime="">(20 часов назад)</time>
                 </div>
-                <p class="catalog__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <p class="catalog__comment-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
                 <div class="catalog__like">
                   <button class="catalog__like-button" type="button" aria-label=""></button>
                   <span class="catalog__like-quantity">Нравится: 215</span>
@@ -147,7 +153,7 @@
                   <b class="catalog__author-name">Сергей</b>
                   <time class="catalog__comment-time" datetime="">(25 часов назад)</time>
                 </div>
-                <p class="catalog__text">Самая кубанская в мире!</p>
+                <p class="catalog__comment-text">Самая кубанская в мире!</p>
                 <div class="catalog__like">
                   <button class="catalog__like-button" type="button" aria-label=""></button>
                   <span class="catalog__like-quantity">Нравится: 4</span>
@@ -167,7 +173,7 @@
                   <b class="catalog__author-name">Максим</b>
                   <time class="catalog__comment-time" datetime="">(40 часов назад)</time>
                 </div>
-                <p class="catalog__text">Где снег-то?</p>
+                <p class="catalog__comment-text">Где снег-то?</p>
                 <div class="catalog__like">
                   <button class="catalog__like-button" type="button" aria-label=""></button>
                   <span class="catalog__like-quantity">Нравится: 150</span>
@@ -187,7 +193,7 @@
                   <b class="catalog__author-name">Надежда</b>
                   <time class="catalog__comment-time" datetime="">(45 часов назад)</time>
                 </div>
-                <p class="catalog__text">Всем GM и взаимные лайки!</p>
+                <p class="catalog__comment-text">Всем GM и взаимные лайки!</p>
                 <div class="catalog__like">
                   <button class="catalog__like-button" type="button" aria-label=""></button>
                   <span class="catalog__like-quantity">Нравится: 2560</span>
@@ -203,15 +209,31 @@
               <p class="photo__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
             </div>
             <form class="photo__form" action="https://echo.htmlacademy.ru/" method="post">
-              <div class="photo__picture">
-                <img src="https://via.placeholder.com/150x150">
-              </div>
-              <div class="photo__range-pruning">
-                <input type="range" min="0" max="100" step="1" value="50">
-              </div>
-              <div class="photo__button">
-                <button class="photo__button-post" type="submit">Запостить</button>
-                <button class="photo__button-cancel" type="reset">Отмена</button>
+              <div class="photo__image"></div>
+              <div class="photo__controls">
+                <div class="photo__filters">
+                  <div class="photo__filters-buttons">
+                    <button class="photo__filter-button photo__filter-button--current" type="button" aria-label="Обрезка"></button>
+                    <button class="photo__filter-button" type="button" aria-label="Заливка"></button>
+                    <button class="photo__filter-button" type="button" aria-label="Контрастность"></button>
+                  </div>
+                  <div class="photo__filter photo__filter--current">
+                    <div class="photo__icon-wrapper"></div>
+                    <input class="photo__range-pruning" type="range" min="1" max="100" name="crop" value="85">
+                  </div>
+                  <div class="photo__filter">
+                    <div class="photo__icon-wrapper"></div>
+                    <input class="photo__range-pruning" type="range" min="1" max="100" name="fill" value="14">
+                  </div>
+                  <div class="photo__filter">
+                    <div class="photo__icon-wrapper"></div>
+                    <input class="photo__range-pruning" type="range" min="1" max="100" name="contrast" value="51">
+                  </div>
+                </div>
+                <div class="photo__buttons">
+                  <button class="photo__button-post" type="submit">Запостить</button>
+                  <button class="photo__button-cancel" type="reset">Отмена</button>
+                </div>
               </div>
             </form>
           </div>
@@ -220,25 +242,45 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo-image">
-          <img src="img/logo/pink-logo-tablet-footer.svg" width="145" height="40" alt="«Пинк»">
+        <a href="" class="page-footer__logo-image" aria-label="Логотип сайта Pink">
+          <svg class="footer-logo__image footer-logo__image--mobile" width="146" height="40">
+            <use xlink:href="img/symbols.svg#logo-pink-blue-mobile"></use>
+          </svg>
+          <svg class="footer-logo__image footer-logo__image--tablet" width="146" height="40">
+            <use xlink:href="img/symbols.svg#logo-pink-blue-desktop"></use>
+          </svg>
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="https://vk.com/htmlacademy">Мы в Твиттер</a>
+              <a class="social__link" href="" aria-label="Twitter">
+                <svg class="social__icon" width="18" height="14">
+                  <use xlink:href="img/symbols.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              <a class="social__link" href="" aria-label="Facebook">
+                <svg class="social__icon" width="9" height="18">
+                  <use xlink:href="img/symbols.svg#icon-facebook"></use>
+                </svg>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://www.instagram.com/htmlacademy">Мы в Ютуб</a>
+              <a class="social__link" href="" aria-label="Youtube">
+                <svg class="social__icon" width="15" height="13">
+                  <use xlink:href="img/symbols.svg#icon-youtube"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <p class="copyright__text">Разработано</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+            <span class="copyright__text">Разработано</span>
+            <svg class="page-footer__copyright-icon" width="27" height="34">
+              <use xlink:href="img/symbols.svg#logo-htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </div>

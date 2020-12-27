@@ -6,6 +6,7 @@
 
 .form {
   margin: 0 auto;
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
@@ -37,9 +38,9 @@
 .form__checkbox {
   padding-top: 38px;
   padding-bottom: 4px;
-  background-color: @grey;;
+  background-color: @grey;
 
- @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
     order: 3;
     padding-top: 34px;
     padding-bottom: 30px;
@@ -133,11 +134,11 @@
 }
 
 .form__list {
-    @media (min-width: @desktop-width) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .form__checkbox-item {
@@ -237,4 +238,3 @@
 .form__notification-star {
   color: @pink;
 }
-

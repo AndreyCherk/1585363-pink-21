@@ -1,7 +1,6 @@
 .contacts {
   font-weight: 300;
   padding-top: 20px;
-  padding-bottom: 38px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
@@ -32,6 +31,16 @@
 .contacts a {
   text-decoration: none;
   color: @pink;
+
+  &:hover {
+    color: @darkblue;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: fade(@darkblue, 30%);
+    text-decoration: none;
+  }
 }
 
 .contacts__slogan {
@@ -62,6 +71,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 41px;
 
   @media (min-width: @tablet-width) {
     justify-content: space-around;

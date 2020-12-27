@@ -1,6 +1,6 @@
 .page-inner__wrapper {
-  margin-bottom: 20px;
   margin: 0 auto;
+  margin-bottom: 20px;
 
   @media (min-width: @desktop-width) {
     width: 960px;
@@ -37,7 +37,35 @@
   display: none;
 
   @media (min-width: @tablet-width) {
-  display: inline-block;
+    display: inline-block;
   }
 }
 
+.page-inner__heading-wrapper {
+  padding: 104px 20px 84px;
+  margin-top: -66px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -110px;
+    padding-top: 191px;
+    padding-bottom: 143px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 184px;
+    padding-bottom: 104px;
+  }
+}
+
+.page-inner__heading {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32.7px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}

@@ -1,3 +1,48 @@
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 155px;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-end;
+  }
+}
+
+.copyright a {
+  display: flex;
+  align-items: center;
+}
+
 .copyright__text {
+  margin: 0;
+  margin-right: 16px;
   line-height: 18px;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 13px;
+    font-size: 18px;
+  }
+}
+
+.copyright__link {
+  display: block;
+  fill: @pink;
+
+  &:hover {
+    fill: @darkblue;
+  }
+
+  &:active {
+    fill: fade(@darkblue, 30%);
+  }
+}
+
+.copyright__icon {
+  display: block;
+  width: 27px;
+  height: 34px;
+  fill: currentColor;
+  pointer-events: none;
 }
