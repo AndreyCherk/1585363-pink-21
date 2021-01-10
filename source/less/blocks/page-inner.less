@@ -1,22 +1,24 @@
 .page-inner__wrapper {
   margin: 0 auto;
   margin-bottom: 20px;
-
-  @media (min-width: @desktop-width) {
-    width: 960px;
-  }
 }
 
 .page-inner__text-start {
-  padding: 54px 21px 35px;
+  padding: 54px 20px 35px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 280px;
 
   @media (min-width: @tablet-width) {
-    padding: 100px 85px 62px;
+    padding: 100px 0 62px;
+    width: 660px;
   }
 
   @media (min-width: @desktop-width) {
     padding-bottom: 75px;
+    width: 960px;
   }
 }
 
@@ -26,10 +28,11 @@
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
+    width: 490px;
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 760px;
+    width: 760px;
   }
 }
 
@@ -42,30 +45,71 @@
 }
 
 .page-inner__heading-wrapper {
-  padding: 104px 20px 84px;
-  margin-top: -66px;
+  margin: 0 auto;
+  width: 320px;
 
   @media (min-width: @tablet-width) {
-    margin-top: -110px;
-    padding-top: 191px;
-    padding-bottom: 143px;
+    width: 660px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 184px;
-    padding-bottom: 104px;
+    width: 960px;
   }
 }
 
 .page-inner__heading {
+  min-height: 237px;
+  margin-top: -66px;
+  background-color: @darkblue;
+  background-image: url("../../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/back-mobile@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    min-height: 440px;
+    margin-top: -110px;
+    background-image: url("../../img/back-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/back-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 394px;
+    background-image: url("../../img/back-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+
+    @media (min-resolution: 2dppx) {
+
+      background-image: url("../../img/back-desktop@2x.jpg");
+    }
+  }
+}
+
+.page-inner__heading-text {
+  color: @white;
   margin: 0;
   font-size: 24px;
   font-weight: 300;
   line-height: 32.7px;
   text-align: center;
+  padding: 102px 20px 0;
 
   @media (min-width: @tablet-width) {
     font-size: 50px;
     line-height: 68px;
+    padding: 187px 20px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 184px 20px 0;
   }
 }
