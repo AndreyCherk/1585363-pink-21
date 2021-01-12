@@ -1,4 +1,4 @@
-.photo__wrapper {
+.photo__text-wrapper {
   margin: 0 auto;
   width: 280px;
 
@@ -12,26 +12,90 @@
   }
 }
 
+.photo__text-start {
+  margin-bottom: 52px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 78px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 75px;
+  }
+}
+
 .photo__text {
+  margin-top: 0;
+  margin-bottom: 0;
   line-height: 30px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.photo__buttons {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.photo__button {
+  margin-bottom: 13px;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 26px;
+    width: 260px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+    width: 183px;
+  }
 }
 
 .photo__button-post {
   color: @pink;
   font-size: 18px;
   line-height: 18px;
+  padding: 15px;
   font-weight: bold;
   border: 3px solid @pink;
   border-radius: 30px;
+
+  &:hover {
+    color: @white;
+    background-color: @pink;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+    background-color: @pink;
+  }
 }
 
 .photo__button-cancel {
   font-size: 18px;
   line-height: 18px;
+  padding: 15px;
   font-weight: bold;
   border: 3px solid @darkblue;
   border-radius: 30px;
   opacity: 0.1;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    color: @white;
+    background-color: @darkblue;
+  }
 }
 
 .photo__form {
@@ -54,6 +118,18 @@
   }
 }
 
+.photo__form-wrapper {
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
+}
+
 .photo__filters {
   padding: 42px 20px 38px;
 
@@ -63,7 +139,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 145px;
+    margin-bottom: 132px;
   }
 }
 
@@ -105,6 +181,12 @@
   &--current {
     display: flex;
   }
+
+  &:last-child::after {
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
 }
 
 .photo__controls {
@@ -132,4 +214,186 @@
   background-image: url("../img/photo-road-mobile.jpg");
   background-position: 50% 0;
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/photo-road-mobile@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    height: 400px;
+    background-image: url("../img/photo-road-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photo-road-tablet@2x.jpg");
+    }
+  }
+}
+
+.photo__filter-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  &--current .photo__icon {
+    fill: @pink;
+  }
+
+  &:not(&--current):hover {
+    & .photo__icon {
+      fill: fade(@darkblue, 50%);
+    }
+  }
+}
+
+.photo__icon-wrapper {
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 25px;
+    height: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 48px;
+    height: 48px;
+  }
+
+  & .photo__icon {
+    fill: @pink;
+  }
+}
+
+.photo__icon {
+  display: block;
+  fill: fade(@darkblue, 30%);
+  pointer-events: none;
+
+  &--crop {
+    @media (min-width: @tablet-width) {
+      width: 22px;
+      height: 22px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 44px;
+      height: 44px;
+    }
+  }
+
+  &--fill {
+    @media (min-width: @tablet-width) {
+      width: 24px;
+      height: 22px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  &--contrast {
+    @media (min-width: @tablet-width) {
+      width: 16px;
+      height: 16px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.photo__range-controls {
+  position: relative;
+  height: 38px;
+  padding-top: 34px;
+  background-color: transparent;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 29px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 48px;
+  }
+}
+
+.photo__range-scale {
+  width: 240px;
+  height: 2px;
+  background: @darkblue;
+
+  @media (min-width: @tablet-width) {
+    width: 202px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 288px;
+  }
+
+}
+
+.photo__range-toggle {
+    position: absolute;
+    top: 27px;
+    width: 11px;
+    height: 11px;
+    padding: 0;
+    border: 2px solid @pink;
+    background-color: @white;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:active {
+      background-color: @pink;
+    }
+
+  &--crop {
+    left: 193px;
+
+    @media (min-width: @tablet-width) {
+      left: 153px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 76px;
+    }
+  }
+
+  &--fill {
+    left: 193px;
+
+    @media (min-width: @tablet-width) {
+      left: 52px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 274px;
+    }
+  }
+
+  &--contrast {
+    left: 193px;
+
+    @media (min-width: @tablet-width) {
+      left: 104px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 167px;
+    }
+  }
 }
