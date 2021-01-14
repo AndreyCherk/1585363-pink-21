@@ -4,7 +4,9 @@
   padding-bottom: 31px;
   background-color: @grey;
   display: flex;
+  overflow: hidden;
   align-items: center;
+  justify-content: center;
   background-image: url("../img/bg-triangle-white.svg");
   background-size: 100% 25px;
   background-position: 0 0;
@@ -36,11 +38,11 @@
 }
 
 .price__table {
-  overflow: hidden;
+
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: left 0.4s linear;
+
+  width: 875px;
+
 
   @media (min-width: @tablet-width) {
     position: static;
