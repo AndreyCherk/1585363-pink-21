@@ -5,16 +5,21 @@
   background-color: @grey;
   display: flex;
   align-items: center;
-
+  background-image: url("../img/bg-triangle-white.svg");
+  background-size: 100% 25px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
     padding-top: 114px;
     padding-bottom: 70px;
+    background-size: 100% 50px;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 159px;
     padding-bottom: 98px;
+    background-size: 100% 80px;
   }
 }
 
@@ -22,16 +27,27 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    width: 620px;
+
   }
 
   @media (min-width: @desktop-width) {
-    width: 700px;
+
   }
 }
 
 .price__table {
   overflow: hidden;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: left 0.4s linear;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+    left: auto;
+    transform: none;
+    width: 100%;
+  }
 }
 
 .price__toggles {

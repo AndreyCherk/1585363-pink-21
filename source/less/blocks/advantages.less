@@ -1,9 +1,9 @@
 .advantages {
-  background-color: @grey;
+
 }
 
-.advantages__wrapper {
-  margin: 0 auto;
+.advantages__background {
+  background-color: @grey;
   background-image: url("../img/bg-triangle-white.svg");
   background-size: 100% 32px;
   background-position: 0 0;
@@ -14,8 +14,19 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 960px;
     background-size: 100% 92px;
+  }
+}
+
+.advantages__wrapper {
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
   }
 }
 
@@ -72,7 +83,7 @@
     align-items: flex-end;
     padding: 75px 20px 2px;
     background-image: url("../../img/phone-screen-3-tablet.png");
-    background-position: 20px 3px;
+    background-position: 20px 8px;
     background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
@@ -83,7 +94,7 @@
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 68px;
+    grid-column-gap: 75px;
     padding: 0 20px 20px;
     background: none;
 
@@ -99,13 +110,14 @@
   margin-bottom: 43px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 46px;
+    margin-bottom: 35px;
     width: 310px;
     text-align: left;
+    margin-left: auto;
   }
 
   @media (min-width: @desktop-width) {
-    width: 240px;
+    width: 252px;
     line-height: 30px;
     text-align: center;
     display: flex;
@@ -164,7 +176,7 @@
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    margin-top: 24px;
+    margin-top: 14px;
 
   }
 

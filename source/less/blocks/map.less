@@ -1,0 +1,61 @@
+.map {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+
+  @media (min-width: @tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 502px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 33px;
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-size: 100% 33px;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      height: 67px;
+      background-size: 100% 67px;
+    }
+
+    @media (min-width: @desktop-width) {
+      height: 104px;
+      background-size: 100% 104px;
+    }
+  }
+}
+
+.map__image {
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+
+    width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}
+
+.map__marker {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 55%;
+  width: 36px;
+  height: 36px;
+  background-image: url("../img/icons/icon-map-marker.svg");
+  background-repeat: no-repeat;
+}

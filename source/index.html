@@ -82,26 +82,28 @@
         </div>
       </section>
       <section class="advantages">
-          <h2 class="visually-hidden">Преимущества приложения «Пинк»</h2>
-          <div class="advantages__slogans">
-            <p class="advantages__slogan">Устали от серости мегаполиса?</p>
-            <p class="advantages__slogan">Нам есть, что вам<br>предложить!</p>
-          </div>
+        <h2 class="visually-hidden">Преимущества приложения «Пинк»</h2>
+        <div class="advantages__slogans">
+          <p class="advantages__slogan">Устали от серости мегаполиса?</p>
+          <p class="advantages__slogan">Нам есть, что вам<br>предложить!</p>
+        </div>
+        <div class="advantages__background">
           <div class="advantages__wrapper">
-          <ul class="advantages__list">
-            <li class="advantages__item advantages__item--first">
-              <h3 class="advantages__title">Поднимает настроение</h3>
-              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="advantages__item advantages__item--second">
-              <h3 class="advantages__title">Меняет мир вокруг</h3>
-              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="advantages__item advantages__item--third">
-              <h3 class="advantages__title">Заводит новых друзей</h3>
-              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
+            <ul class="advantages__list">
+              <li class="advantages__item advantages__item--first">
+                <h3 class="advantages__title">Поднимает настроение</h3>
+                <p class="advantages__description">Приложение позволит вам победить осеннюю&nbsp;хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="advantages__item advantages__item--second">
+                <h3 class="advantages__title">Меняет мир вокруг</h3>
+                <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="advantages__item advantages__item--third">
+                <h3 class="advantages__title">Заводит новых друзей</h3>
+                <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="efficiency">
@@ -117,41 +119,41 @@
         </div>
       </section>
       <section class="reviews">
-        <div class="reviews__wrapper slider">
+        <div class="reviews__wrapper slider-reviews">
           <h2 class="visually-hidden">Отзывы о приложении «Пинк»</h2>
-          <div class="reviews__list">
-            <blockquote class="reviews__item slider__item">
+          <div class="reviews__list reviews__list--current">
+            <blockquote class="reviews__item ">
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               <cite class="reviews__author-name">Николай Петров</cite>
               <p class="reviews__author-information">25 лет, водитель трамвая</p>
             </blockquote>
           </div>
           <div class="reviews__list">
-            <blockquote class="reviews__item slider__item">
+            <blockquote class="reviews__item">
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               <cite class="reviews__author-name">Николай Петров</cite>
               <p class="reviews__author-information">25 лет, водитель трамвая</p>
             </blockquote>
           </div>
           <div class="reviews__list">
-            <blockquote class="reviews__item slider__item">
+            <blockquote class="reviews__item">
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               <cite class="reviews__author-name">Николай Петров</cite>
               <p class="reviews__author-information">25 лет, водитель трамвая</p>
             </blockquote>
           </div>
           <div class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button"></button>
-            <button class="slider__toggle" type="button"></button>
-            <button class="slider__toggle" type="button"></button>
+            <button class="slider__toggle slider__toggle--current" type="button" aria-label="1"></button>
+            <button class="slider__toggle" type="button" aria-label="2"></button>
+            <button class="slider__toggle" type="button" aria-label="3"></button>
           </div>
           <div class="slider__nav slider-nav-button">
-            <button class="slider__button slider__button--prev" type="button"></button>
-            <button class="slider__button slider__button--next" type="button"></button>
+            <button class="slider__button slider__button--prev" type="button" aria-label="Назад"></button>
+            <button class="slider__button slider__button--next" type="button" aria-label="Вперёд"></button>
           </div>
         </div>
       </section>
-      <section class="price">
+      <section class="price" id="price">
         <div class="price__wrapper slider">
           <h2 class="visually-hidden">Цены на приложение</h2>
           <div class="price__slider">
@@ -299,6 +301,7 @@
             <img class="map__image" src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x"
             alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
           </picture>
+          <div class="map__marker"></div>
         </div>
       </section>
     </main>

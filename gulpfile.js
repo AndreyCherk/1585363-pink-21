@@ -5,13 +5,13 @@ const less = require("gulp-less");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
-const rename = require ("gulp-rename");
-const htmlmin = require ("gulp-htmlmin");
-const uglify = require ("gulp-uglify-es");
+const rename = require("gulp-rename");
+const htmlmin = require("gulp-htmlmin");
+const uglify = require("gulp-uglify");
 const imagemin = require("gulp-imagemin");
-const webp = require ("gulp-webp");
-const svgstore = require ("gulp-svgstore");
-const del = require ("del");
+const webp = require("gulp-webp");
+const svgstore = require("gulp-svgstore");
+const del = require("del");
 const sync = require("browser-sync").create();
 
 // Styles
@@ -152,7 +152,7 @@ const build = gulp.series(
   gulp.parallel(
     styles,
     html,
-    sprite,
+
     copy,
     images,
     createWebp
