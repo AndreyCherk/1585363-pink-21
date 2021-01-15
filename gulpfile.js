@@ -152,12 +152,13 @@ const build = gulp.series(
   gulp.parallel(
     styles,
     html,
-
+    scripts,
+    sprite,
     copy,
     images,
     createWebp
   )
-)
+);
 
 exports.build = build;
 
@@ -166,12 +167,14 @@ exports.default = gulp.series(
   gulp.parallel(
     styles,
     html,
+    scripts,
     sprite,
     copy,
     images,
     createWebp
   ),
   gulp.series(
-    server, watcher
+    server,
+    watcher
   )
-)
+);

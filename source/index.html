@@ -10,7 +10,7 @@
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__nav-wrapper">
-        <nav class="main-nav main-nav--opened main-nav--nojs">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <div class="main-nav__nav-wrapper">
             <div class="main-nav__logo-wrapper">
               <a href="" class="main-nav__logo-image header-logo" aria-label="Логотип сайта Pink">
@@ -142,14 +142,14 @@
               <p class="reviews__author-information">25 лет, водитель трамвая</p>
             </blockquote>
           </div>
-          <div class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button" aria-label="1"></button>
-            <button class="slider__toggle" type="button" aria-label="2"></button>
-            <button class="slider__toggle" type="button" aria-label="3"></button>
+          <div class="reviews__toggles reviews-toggles">
+            <button class="reviews-toggles__toggle reviews-toggles__toggle--current" type="button" aria-label="1"></button>
+            <button class="reviews-toggles__toggle" type="button" aria-label="2"></button>
+            <button class="reviews-toggles__toggle" type="button" aria-label="3"></button>
           </div>
-          <div class="slider__nav slider-nav-button">
-            <button class="slider__button slider__button--prev" type="button" aria-label="Назад"></button>
-            <button class="slider__button slider__button--next" type="button" aria-label="Вперёд"></button>
+          <div class="reviews__slider slider-buttons">
+            <button class="slider-buttons__button slider-buttons__button--prev" type="button" aria-label="Назад"></button>
+            <button class="slider-buttons__button slider-buttons__button--next" type="button" aria-label="Вперёд"></button>
           </div>
         </div>
       </section>
@@ -264,9 +264,9 @@
               </tbody>
             </table>
             <div class="price__toggles slider__toggles">
-              <button class="slider__toggle" type="button" aria-label="1"></button>
-              <button class="slider__toggle slider__toggle--current" type="button" aria-label="2"></button>
-              <button class="slider__toggle" type="button" aria-label="3"></button>
+              <button class="slider__toggle" type="button"></button>
+              <button class="slider__toggle slider__toggle--current" type="button"></button>
+              <button class="slider__toggle" type="button"></button>
             </div>
           </div>
         </div>
@@ -352,21 +352,6 @@
     </footer>
   </body>
 
-<script>
-  var navMain = document.querySelector('.main-nav');
-  var navToggle = document.querySelector('.main-nav__toggle');
-
-  navMain.classList.remove('main-nav--nojs');
-
-  navToggle.addEventListener('click', function() {
-    if (navMain.classList.contains('main-nav--closed')) {
-      navMain.classList.remove('main-nav--closed');
-      navMain.classList.add('main-nav--opened');
-    } else {
-      navMain.classList.add('main-nav--closed');
-      navMain.classList.remove('main-nav--opened');
-    }
-  });
-</script>
+  <script src="js/script.min.js"></script>
 
 </html>
