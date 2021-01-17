@@ -1,6 +1,6 @@
 .table-price {
-  // border-spacing: 0;
-  border-collapse: collapse;
+  border-spacing: 0;
+
 
 }
 
@@ -89,10 +89,44 @@
 }
 
 .table-price__text {
-  @media (min-width: @tablet-width) {
-    display: none;
+  display: block;
+  position: relative;
+  text-transform: uppercase;
+
+  &--yes::after {
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 21px;
+    top: 5px;
+    left: 205px;
+    background-repeat: no-repeat;
+    background-image: url("../img/icons/icon-yes.svg");
+  }
+
+    &--no::after {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    top: 1px;
+    left: 205px;
+    background-repeat: no-repeat;
+    background-image: url("../img/icons/icon-no.svg");
+  }
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+.table-price__text-one {
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
   }
 }
+
+
 
 .table-price__cell-first {
   display: none;

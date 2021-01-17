@@ -6,12 +6,12 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 49px;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 185px;
-    padding-bottom: 40px;
+    padding-bottom: 53px;
     background-image: url("../../img/logo/logo-quotes.svg");
     background-repeat: no-repeat;
     background-position: 50% 72px;
@@ -34,9 +34,24 @@
 
 .reviews__list {
   display: none;
+  flex-direction: column;
+  height: 254px;
+  margin-bottom: 44px;
+  line-height: 30px;
 
   &--current {
     display: flex;
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 186px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 190px;
+    margin: 0 auto;
+    width: 780px;
+    margin-bottom: 0;
   }
 }
 
@@ -45,16 +60,13 @@
   flex-direction: column;
   line-height: 30px;
   margin: 0;
-  margin-bottom: 44px;
 
   @media (min-width: @tablet-width) {
     padding: 0 20px;
-    margin-bottom: 44px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0 50px;
-    margin-bottom: 41px;
   }
 }
 
@@ -109,6 +121,10 @@
 
 .reviews__toggles {
   margin-bottom: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 3px;

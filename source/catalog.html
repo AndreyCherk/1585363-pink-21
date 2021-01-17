@@ -57,13 +57,14 @@
           <p class="page-inner__text">Взгляните на фотографии, которые выкладывают пользователи!<br class="catalog__hidden">Видите, как не хватает ваших?</p>
         </div>
         <section class="catalog">
+          <h2 class="visually-hidden">Галерея фотографий пользоватлей приложения</h2>
           <figure class="catalog__list catalog__list--panorama">
             <a class="catalog__link catalog__link--panorama" href="">
               <picture class="catalog__picture catalog__picture--panorama">
                 <source type="image/webp" media="(min-width: 960px)"
-                  srcset="img/content/panorama-desktop@1x.webp 1x, img/content/panorama-desktop@2x.webp 2x">
+                  srcset="img/content/panorama-desktop.webp 1x, img/content/panorama-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)"
-                  srcset="img/content/ppanorama-tablet.webp 1x, img/content/panorama-tablet@2x.webp 2x">
+                  srcset="img/content/panorama-tablet.webp 1x, img/content/panorama-tablet@2x.webp 2x">
                 <source type="image/webp"
                   srcset="img/content/panorama-mobile.webp 1x, img/content/panorama-mobile@2x.webp 2x">
                 <source media="(min-width: 960px)"
@@ -72,6 +73,7 @@
                   srcset="img/content/panorama-tablet.jpg 1x, img/content/panorama-tablet@2x.jpg 2x">
                 <img class="catalog__image" src="img/content/panorama-mobile.jpg"
                   srcset="img/content/panorama-mobile@2x.jpg 2x" alt="Фотография дня">
+                <span class="catalog__panorama-day">Панорама дня</span>
               </picture>
             </a>
             <figcaption class="catalog__content catalog__content--panorama">
@@ -83,9 +85,6 @@
               <div class="catalog__like catalog__like--panorama">
                 <button class="catalog__like-button" type="button" aria-label="Нравится"></button>
                 <span class="catalog__like-quantity">Нравится: 215</span>
-              </div>
-              <div class="catalog__panorama-day">
-                <span class="catalog__panorama-day-text">Панорама дня</span>
               </div>
             </figcaption>
           </figure>

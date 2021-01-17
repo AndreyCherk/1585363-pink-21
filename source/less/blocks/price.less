@@ -28,27 +28,31 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
+  padding: 0 20px;
 
   }
 
   @media (min-width: @desktop-width) {
-
+  padding: 0 10px;
   }
 }
 
 .price__table {
   position: relative;
-  width: 875px;
+  width: 832px;
 
   @media (min-width: @tablet-width) {
-    position: static;
-    left: auto;
-    transform: none;
-    width: 100%;
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 932px;
   }
 }
 
 .price__toggles {
+  display: flex;
+  justify-content: center;
   margin-top: 45px;
   margin-bottom: 15px;
 

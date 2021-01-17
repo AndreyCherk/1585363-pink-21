@@ -1,0 +1,137 @@
+.modal-form {
+  position: fixed;
+  top: 200px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 320px;
+  background-color: @white;
+  text-align: center;
+  z-index: 100;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.15);
+
+  &--success {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      width: 460px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 780px;
+    }
+  }
+
+  &--failure {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      width: 460px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 780px;
+    }
+  }
+}
+
+.modal-form__top {
+  padding: 23px 20px 24px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+
+  &--failure {
+    padding-top: 26px;
+    padding-bottom: 20px;
+
+    @media (min-width: @desktop-width) {
+      padding-left: 215px;
+      padding-right: 215px;
+    }
+  }
+}
+
+.modal-form__title {
+  margin-top: 18px;
+  margin-bottom: 23px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: @black;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 18px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.modal-form__text {
+  @media (min-width: @tablet-width) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  &--success {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+}
+
+.modal-form__bottom {
+  padding: 48px 20px 52px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+
+  &--success {
+    background-color: @grey;
+  }
+
+  &--failure {
+    padding-top: 5px;
+    padding-bottom: 50px;
+    background-color: @white;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 5px;
+      padding-bottom: 52px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 52px;
+      padding-left: 242px;
+      padding-right: 242px;
+      background-color: @grey;
+    }
+  }
+}
+
+.modal-form__button {
+  padding: 16px 0;
+  width: 100%;
+ }
