@@ -1,10 +1,16 @@
+.social {
+  @media (min-width: @desktop-width) {
+    margin-left: 3px;
+  }
+}
+
 .social__list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
-  padding: 41px 0;
+  padding: 39px 0;
 
   @media (min-width: @tablet-width) {
     padding-top: 0;
@@ -16,19 +22,17 @@
   }
 }
 
-.social__icon {
-  fill: @pink;
-}
-
 .social__item {
-  margin: 0 6px;
+  margin-left: 4px;
+  margin-right: 4px;
 
   @media (min-width: @tablet-width) {
-    margin: 0 3px 0 9px;
+    margin-left: 9px;
+    margin-right: 0;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 2px 0 10px;
+    margin-left: 6px;
   }
 }
 
@@ -59,6 +63,5 @@
   fill: @pink;
   display: block;
   margin: auto;
-  fill: currentColor;
   pointer-events: none;
 }

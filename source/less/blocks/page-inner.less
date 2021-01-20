@@ -1,10 +1,50 @@
 .page-inner__wrapper {
   margin: 0 auto;
-  margin-bottom: 20px;
+}
+
+.page-inner__heading-text {
+  color: @white;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32.7px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 184px 20px 0;
+  }
+
+  &--form {
+    padding: 131px 20px 0;
+
+    @media (min-width: @tablet-width) {
+      padding: 175px 20px 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 170px 20px 0;
+    }
+  }
+
+  &--catalog {
+    padding: 95px 20px 5px;
+
+    @media (min-width: @tablet-width) {
+      padding: 172px 20px 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 171px 20px 0;
+    }
+  }
 }
 
 .page-inner__text-start {
-  padding: 54px 20px 35px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -12,13 +52,32 @@
   width: 280px;
 
   @media (min-width: @tablet-width) {
-    padding: 100px 0 62px;
-    width: 660px;
+    width: 620px;
   }
 
   @media (min-width: @desktop-width) {
     padding-bottom: 75px;
     width: 960px;
+  }
+
+  &--form {
+    padding: 83px 20px 36px;
+
+    @media (min-width: @tablet-width) {
+      padding: 90px 20px 40px;
+    }
+  }
+
+  &--catalog {
+    padding: 45px 20px 48px;
+
+    @media (min-width: @tablet-width) {
+      padding: 92px 20px 76px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-bottom: 88px;
+    }
   }
 }
 
@@ -28,7 +87,7 @@
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
-    width: 490px;
+    width: 500px;
   }
 
   @media (min-width: @desktop-width) {
@@ -58,10 +117,11 @@
 }
 
 .page-inner__heading {
-  min-height: 237px;
+  min-height: 236px;
   margin-top: -66px;
   background-color: @darkblue;
   background-image: url("../../img/back-mobile.jpg");
+  background-size: 320px 462px;
   background-repeat: no-repeat;
   background-position: 50% 0;
 
@@ -70,9 +130,10 @@
   }
 
   @media (min-width: @tablet-width) {
-    min-height: 440px;
+    min-height: 435px;
     margin-top: -110px;
     background-image: url("../../img/back-tablet.jpg");
+    background-size: 1200px 729px;
     background-repeat: no-repeat;
     background-position: 50% 0;
 
@@ -84,6 +145,7 @@
   @media (min-width: @desktop-width) {
     min-height: 394px;
     background-image: url("../../img/back-desktop.jpg");
+    background-size: 2560px 853px;
     background-repeat: no-repeat;
     background-position: 50% 0;
 
@@ -91,25 +153,5 @@
 
       background-image: url("../../img/back-desktop@2x.jpg");
     }
-  }
-}
-
-.page-inner__heading-text {
-  color: @white;
-  margin: 0;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 32.7px;
-  text-align: center;
-  padding: 102px 20px 0;
-
-  @media (min-width: @tablet-width) {
-    font-size: 50px;
-    line-height: 68px;
-    padding: 187px 20px 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding: 184px 20px 0;
   }
 }

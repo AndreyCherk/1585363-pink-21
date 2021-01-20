@@ -134,4 +134,3 @@ var navMain = document.querySelector('.main-nav');
     }
   }
 })();
-

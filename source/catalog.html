@@ -10,7 +10,7 @@
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__nav-wrapper">
-        <nav class="main-nav main-nav--closed main-nav--nojs">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
           <div class="main-nav__nav-wrapper">
             <div class="main-nav__logo-wrapper">
               <a class="main-nav__logo-image header-logo" aria-label="Логотип сайта Pink" href="index.html">
@@ -24,21 +24,21 @@
                   <use xlink:href="img/sprite.svg#pink-logo-white-desktop"></use>
                 </svg>
               </a>
-              <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть навигацию</span></button>
+              <button class="main-nav__toggle" type="button"><span class="visually-hidden" aria-label="Открыть навигацию">Открыть навигацию</span></button>
             </div>
             <div class="main-nav__wrapper">
               <ul class="main-nav__list">
                 <li class="main-nav__item">
-                  <a class="main-nav__limk" href="index.html">Главная</a>
+                  <a class="main-nav__link" href="index.html">Главная</a>
                 </li>
                 <li class="main-nav__item">
-                  <a class="main-nav__limk main-nav__item--active">Фотографии</a>
+                  <a class="main-nav__link main-nav__item--active">Фотографии</a>
                 </li>
                 <li class="main-nav__item">
-                  <a class="main-nav__limk" href="form.html">Конкурс</a>
+                  <a class="main-nav__link" href="form.html">Конкурс</a>
                 </li>
                 <li class="main-nav__item">
-                  <a class="main-nav__limk" href="">Html Academy</a>
+                  <a class="main-nav__link" href="">HTML Academy</a>
                 </li>
               </ul>
             </div>
@@ -50,47 +50,49 @@
       <div class="page-inner__wrapper">
         <div class="page-inner__heading">
           <div class="page-inner__heading-wrapper">
-            <h1 class="page-inner__heading-text">Фотографии<br>пользователей</h1>
+            <h1 class="page-inner__heading-text page-inner__heading-text--catalog">Фотографии<br>пользователей</h1>
           </div>
         </div>
-        <div class="page-inner__text-start">
+        <div class="page-inner__text-start page-inner__text-start--catalog">
           <p class="page-inner__text">Взгляните на фотографии, которые выкладывают пользователи!<br class="catalog__hidden">Видите, как не хватает ваших?</p>
         </div>
         <section class="catalog">
           <h2 class="visually-hidden">Галерея фотографий пользоватлей приложения</h2>
-          <figure class="catalog__list catalog__list--panorama">
-            <a class="catalog__link catalog__link--panorama" href="">
-              <picture class="catalog__picture catalog__picture--panorama">
-                <source type="image/webp" media="(min-width: 960px)"
-                  srcset="img/content/panorama-desktop.webp 1x, img/content/panorama-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 660px)"
-                  srcset="img/content/panorama-tablet.webp 1x, img/content/panorama-tablet@2x.webp 2x">
-                <source type="image/webp"
-                  srcset="img/content/panorama-mobile.webp 1x, img/content/panorama-mobile@2x.webp 2x">
-                <source media="(min-width: 960px)"
-                  srcset="img/content/panorama-desktop.jpg 1x, img/content/panorama-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)"
-                  srcset="img/content/panorama-tablet.jpg 1x, img/content/panorama-tablet@2x.jpg 2x">
-                <img class="catalog__image" src="img/content/panorama-mobile.jpg"
-                  srcset="img/content/panorama-mobile@2x.jpg 2x" alt="Фотография дня">
-                <span class="catalog__panorama-day">Панорама дня</span>
-              </picture>
-            </a>
-            <figcaption class="catalog__content catalog__content--panorama">
-              <div class="catalog__comment-info">
-                <b class="catalog__author-name">Анна</b>
-                <time class="catalog__comment-time" datetime="">(5 минут назад)</time>
-              </div>
-              <p class="catalog__comment-text catalog__comment-text--panorama">Прыгать или нет? Напишите в комментарии свой совет и смотрите&nbsp;прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <div class="catalog__like catalog__like--panorama">
-                <button class="catalog__like-button" type="button" aria-label="Нравится"></button>
-                <span class="catalog__like-quantity">Нравится: 215</span>
-              </div>
-            </figcaption>
-          </figure>
+          <div class="catalog__panorama-center">
+            <figure class="catalog__list catalog__list--panorama">
+              <a class="catalog__link catalog__link--panorama" href="" aria-label="Открыть фотографию дня в полном размере">
+                <picture class="catalog__picture catalog__picture--panorama">
+                  <source type="image/webp" media="(min-width: 960px)"
+                    srcset="img/content/panorama-desktop.webp 1x, img/content/panorama-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)"
+                    srcset="img/content/panorama-tablet.webp 1x, img/content/panorama-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/content/panorama-mobile.webp 1x, img/content/panorama-mobile@2x.webp 2x">
+                  <source media="(min-width: 960px)"
+                    srcset="img/content/panorama-desktop.jpg 1x, img/content/panorama-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)"
+                    srcset="img/content/panorama-tablet.jpg 1x, img/content/panorama-tablet@2x.jpg 2x">
+                  <img class="catalog__image" src="img/content/panorama-mobile.jpg"
+                    srcset="img/content/panorama-mobile@2x.jpg 2x" alt="Фотография дня">
+                  <span class="catalog__panorama-day">Панорама дня</span>
+                </picture>
+              </a>
+              <figcaption class="catalog__content catalog__content--panorama">
+                <div class="catalog__comment-info">
+                  <b class="catalog__author-name">Анна</b>
+                  <time class="catalog__comment-time" datetime="">(5 минут назад)</time>
+                </div>
+                <p class="catalog__comment-text catalog__comment-text--panorama">Прыгать или нет? Напишите в комментарии свой совет и смотрите&nbsp;прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <div class="catalog__like catalog__like--panorama">
+                  <button class="catalog__like-button" type="button" aria-label="Нравится"></button>
+                  <span class="catalog__like-quantity">Нравится: 215</span>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
           <div class="catalog__wrapper">
             <figure class="catalog__list">
-              <a class="catalog__link" href="">
+              <a class="catalog__link" href="" aria-label="Открыть фотографию в полном размере">
                 <picture class="catalog__picture">
                   <source type="image/webp" media="(min-width: 960px)"
                     srcset="img/content/photo-car-desktop.webp 1x, img/content/photo-car-desktop@2x.webp 2x">
@@ -119,7 +121,7 @@
               </figcaption>
             </figure>
             <figure class="catalog__list">
-              <a class="catalog__link" href="">
+              <a class="catalog__link" href="" aria-label="Открыть фотографию в полном размере">
                 <picture class="catalog__picture">
                   <source type="image/webp" media="(min-width: 960px)"
                     srcset="img/content/photo-drumset-desktop.webp 1x, img/content/photo-drumset-desktop@2x.webp 2x">
@@ -148,7 +150,7 @@
               </figcaption>
             </figure>
             <figure class="catalog__list">
-              <a class="catalog__link" href="">
+              <a class="catalog__link" href="" aria-label="Открыть фотографию в полном размере">
                 <picture class="catalog__picture">
                   <source type="image/webp" media="(min-width: 960px)"
                     srcset="img/content/photo-window-desktop.webp 1x, img/content/photo-window-desktop@2x.webp 2x">
@@ -177,7 +179,7 @@
               </figcaption>
             </figure>
             <figure class="catalog__list">
-              <a class="catalog__link" href="">
+              <a class="catalog__link" href="" aria-label="Открыть фотографию в полном размере">
                 <picture class="catalog__picture">
                   <source type="image/webp" media="(min-width: 960px)"
                     srcset="img/content/photo-tent-desktop.webp 1x, img/content/photo-tent-desktop@2x.webp 2x">
@@ -206,7 +208,7 @@
               </figcaption>
             </figure>
             <figure class="catalog__list">
-              <a class="catalog__link" href="">
+              <a class="catalog__link" href="" aria-label="Открыть фотографию в полном размере">
                 <picture class="catalog__picture">
                   <source type="image/webp" media="(min-width: 960px)"
                     srcset="img/content/photo-nature-desktop.webp 1x, img/content/photo-nature-desktop@2x.webp 2x">
@@ -235,7 +237,7 @@
               </figcaption>
             </figure>
             <figure class="catalog__list">
-              <a class="catalog__link" href="">
+              <a class="catalog__link" href="" aria-label="Открыть фотографию в полном размере">
                 <picture class="catalog__picture">
                   <source type="image/webp" media="(min-width: 960px)"
                     srcset="img/content/photo-wing-desktop.webp 1x, img/content/photo-wing-desktop@2x.webp 2x">
@@ -273,8 +275,7 @@
             </div>
           </div>
           <div class="photo__form-wrapper">
-          <form class="photo__form" action="https://echo.htmlacademy.ru/" method="post">
-
+            <form class="photo__form" action="https://echo.htmlacademy.ru/" method="post">
               <div class="photo__image"></div>
               <div class="photo__controls">
                 <div class="photo__filters">
@@ -305,7 +306,7 @@
                       <div class="photo__range-scale"></div>
                       <div class="photo__range-toggle photo__range-toggle--crop"></div>
                     </div>
-                    <input class="visually-hidden" type="range" min="1" max="100" name="crop" value="85">
+                    <input class="visually-hidden" type="range" min="1" max="100" name="crop" value="85" aria-label="Обрезка">
                   </div>
                   <div class="photo__filter">
                     <div class="photo__icon-wrapper">
@@ -317,7 +318,7 @@
                       <div class="photo__range-scale"></div>
                       <div class="photo__range-toggle photo__range-toggle--fill"></div>
                     </div>
-                    <input class="visually-hidden" type="range" min="1" max="100" name="fill" value="14">
+                    <input class="visually-hidden" type="range" min="1" max="100" name="fill" value="14" aria-label="Заливка">
                   </div>
                   <div class="photo__filter photo__filter--end">
                     <div class="photo__icon-wrapper">
@@ -329,18 +330,16 @@
                       <div class="photo__range-scale"></div>
                       <div class="photo__range-toggle photo__range-toggle--contrast"></div>
                     </div>
-                    <input class="visually-hidden" type="range" min="1" max="100" name="contrast" value="51">
+                    <input class="visually-hidden" type="range" min="1" max="100" name="contrast" value="51" aria-label="Контрастность">
                   </div>
                 </div>
                 <div class="photo__buttons">
-                  <button class="photo__button photo__button-post" type="submit">Запостить</button>
-                  <button class="photo__button photo__button-cancel" type="reset">Отмена</button>
+                  <button class="photo__button photo__button-post" type="submit" aria-label="Отправить">Запостить</button>
+                  <button class="photo__button photo__button-cancel" type="reset" aria-label="Отменить">Отмена</button>
                 </div>
               </div>
-
             </form>
-            </div>
-
+          </div>
         </section>
       </div>
     </main>
@@ -357,21 +356,21 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="" aria-label="Twitter">
+              <a class="social__link" href="https://twitter.com" aria-label="Twitter">
                 <svg class="social__icon" width="18" height="14">
                   <use xlink:href="img/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="" aria-label="Facebook">
+              <a class="social__link" href="https://www.facebook.com" aria-label="Facebook">
                 <svg class="social__icon" width="9" height="18">
                   <use xlink:href="img/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="" aria-label="Youtube">
+              <a class="social__link" href="https://www.youtube.com" aria-label="Youtube">
                 <svg class="social__icon" width="15" height="13">
                   <use xlink:href="img/sprite.svg#icon-youtube"></use>
                 </svg>
@@ -383,7 +382,7 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
             <span class="copyright__text">Разработано</span>
             <svg class="page-footer__copyright-icon" width="27" height="34">
-              <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+              <use xlink:href="img/sprite.svg#icon-html-academy"></use>
             </svg>
           </a>
         </div>

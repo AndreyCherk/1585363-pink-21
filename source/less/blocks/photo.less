@@ -1,8 +1,22 @@
-.photo__text-wrapper {
-  margin: 0 auto;
+.photo {
+  margin-bottom: 21px;
 
   @media (min-width: @tablet-width) {
-    width: 660px;
+    margin-bottom: 3px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 28px;
+  }
+}
+
+.photo__text-wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
   }
 
   @media (min-width: @desktop-width) {
@@ -12,14 +26,14 @@
 }
 
 .photo__text-start {
-  margin-bottom: 52px;
+  margin-bottom: 41px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 78px;
+    margin-bottom: 69px;
   }
 
-  @media (min-width: @tablet-width) {
-    margin-bottom: 75px;
+  @media (min-width: @desktop-width) {
+    margin-bottom: 68px;
   }
 }
 
@@ -109,7 +123,7 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     align-items: flex-start;
-    padding: 40px 20px 54px;
+    padding: 40px 20px 26px;
   }
 
   @media (min-width: @desktop-width) {
@@ -138,7 +152,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 132px;
+    margin-bottom: 144px;
   }
 }
 
@@ -211,6 +225,7 @@
   width: 280px;
   height: 374px;
   background-image: url("../img/photo-road-mobile.jpg");
+  background-size: 280px 374px;
   background-position: 50% 0;
   background-repeat: no-repeat;
 
@@ -219,9 +234,11 @@
   }
 
   @media (min-width: @tablet-width) {
+    margin-top: 15px;
     width: 300px;
     height: 400px;
     background-image: url("../img/photo-road-tablet.jpg");
+    background-size: 300px 400px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/photo-road-tablet@2x.jpg");
@@ -326,7 +343,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left:  48px;
+    padding-left: 48px;
   }
 }
 
@@ -342,33 +359,32 @@
   @media (min-width: @desktop-width) {
     width: 288px;
   }
-
 }
 
 .photo__range-toggle {
-    position: absolute;
-    top: 27px;
-    width: 11px;
-    height: 11px;
-    padding: 0;
-    border: 2px solid @pink;
-    background-color: @white;
-    border-radius: 50%;
-    cursor: pointer;
+  position: absolute;
+  top: 27px;
+  width: 11px;
+  height: 11px;
+  padding: 0;
+  border: 2px solid @pink;
+  background-color: @white;
+  border-radius: 50%;
+  cursor: pointer;
 
-    &:active {
-      background-color: @pink;
-    }
+  &:active {
+    background-color: @pink;
+  }
 
   &--crop {
     left: 193px;
 
     @media (min-width: @tablet-width) {
-      left: 153px;
+      left: 175px;
     }
 
     @media (min-width: @desktop-width) {
-      left: 76px;
+      left: 113px;
     }
   }
 
@@ -376,11 +392,11 @@
     left: 193px;
 
     @media (min-width: @tablet-width) {
-      left: 52px;
+      left: 55px;
     }
 
     @media (min-width: @desktop-width) {
-      left: 274px;
+      left: 290px;
     }
   }
 
@@ -388,11 +404,11 @@
     left: 193px;
 
     @media (min-width: @tablet-width) {
-      left: 104px;
+      left: 125px;
     }
 
     @media (min-width: @desktop-width) {
-      left: 167px;
+      left: 204px;
     }
   }
 }
