@@ -55,6 +55,7 @@
 }
 
 .map__image {
+  width: 320px;
   height: 200px;
   background-image: url("../img/map-mobile.png");
   background-size: 320px 200px;
@@ -67,6 +68,7 @@
   }
 
   @media (min-width: @tablet-width) {
+    width: 660px;
     height: 374px;
     background-image: url("../img/map-tablet.png");
     background-size: 660px 374px;
@@ -94,4 +96,19 @@
 
 .map__image iframe {
   border: none;
+}
+
+.map__size {
+  width: 320px;
+  height: 200px;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 502px;
+    width: 1200px;
+  }
 }

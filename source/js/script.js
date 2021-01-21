@@ -15,41 +15,6 @@ var navMain = document.querySelector('.main-nav');
     }
   });
 
-//Таблица price
-
-(function () {
-  const priceBlock = document.getElementById('price');
-  let sliderButtons, priceTable;
-
-  if (priceBlock) {
-    const sliderControls = priceBlock.querySelector('.reviews-toggles');
-    priceTable = priceBlock.querySelector('.price__table');
-
-    sliderButtons = Array.from(sliderControls.querySelectorAll('.reviews-toggles__toggle'));
-
-    if (sliderButtons) {
-      sliderControls.addEventListener('click', clickSliderControls);
-    }
-  }
-
-  function findCurrentButton(element) {
-    return element.classList.contains('reviews-toggles__toggle--current');
-  }
-
-  function clickSliderControls(evt) {
-    let element = evt.target;
-
-    if (element.classList.contains('reviews-toggles__toggle')) {
-      let indexCurrentButton = sliderButtons.indexOf(sliderButtons.find(findCurrentButton));
-      let indexNextButton = sliderButtons.indexOf(element);
-
-      sliderButtons[indexCurrentButton].classList.remove('reviews-toggles__toggle--current');
-      sliderButtons[indexNextButton].classList.add('reviews-toggles__toggle--current');
-      priceTable.style.left = `$(150 - indexNextButton * 100)%`;
-    }
-  }
-})();
-
 // reviews-slider
 (function () {
   const reviewsSlider = document.getElementById('reviews');
