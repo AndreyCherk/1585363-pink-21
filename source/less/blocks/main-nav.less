@@ -218,24 +218,27 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 20px;
   }
-
-  @media (max-width: @desktop-width) {
-    .main-nav--nojs .main-nav__item {
-      display: block;
-    }
-
-    .main-nav--nojs .main-nav__toggle {
-      display: none;
-    }
-
-    .main-nav--nojs {
-      background-color: @darkblue;
-    }
-  }
 }
 
 .main-nav--nojs {
   .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav__item {
+    display: block;
+    background-color: @darkblue;
+
+    @media (min-width: @desktop-width) {
+      background-color: transparent;
+    }
+  }
+
+  .main-nav__nav-wrapper {
+    background-color: @darkblue;
+
+    @media (min-width: @desktop-width) {
+      background-color: transparent;
+    }
   }
 }

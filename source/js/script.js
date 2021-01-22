@@ -16,6 +16,7 @@ var navMain = document.querySelector('.main-nav');
   });
 
 // reviews-slider
+
 (function () {
   const reviewsSlider = document.getElementById('reviews');
   let sliderButtons, sliderNavButtons, slides;
