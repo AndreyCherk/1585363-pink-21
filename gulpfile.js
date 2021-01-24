@@ -163,6 +163,8 @@ const build = gulp.series(
 
 exports.build = build;
 
+// Default
+
 exports.default = gulp.series(
   clean,
   gulp.parallel(
@@ -171,7 +173,6 @@ exports.default = gulp.series(
     scripts,
     sprite,
     copy,
-    images,
     createWebp
   ),
   gulp.series(
